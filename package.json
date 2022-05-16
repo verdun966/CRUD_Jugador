@@ -1,7 +1,7 @@
 {
-  "name": "crud_autos",
+  "name": "crud_jugador",
   "version": "1.0.0",
-  "description": "esto es un crud de autos",
+  "description": "esto es un crud de jugadores",
   "main": "app.js",
   "scripts": {
     "start": "nodemon ./bin/www",

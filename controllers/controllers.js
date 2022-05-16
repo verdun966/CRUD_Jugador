@@ -6,8 +6,8 @@ const vistaUno = (req, res)=>{
 }
 
 const vistaJugador = async (req, res) =>{
-    const Tevez = await Car.find()
-    res.json({Tevez})
+    const jugador = await Messi.find()
+    res.json({jugador})
 }
 
 const otroJugador = async (req, res)=>{

@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router(); 
-const {vistaJugador, crearJugador, otroJugador} = require('../controllers/controllers.js')
+const {vistaUno, crearJugador, otroJugador} = require('../controllers/controllers.js')
 
 /* GET users listing. */
-router.get('/ver', vistaJugador);
+router.get('/ver', vistaUno);
 router.post('/crear', crearJugador);
 router.post('/crear', otroJugador);
-
+ 
 module.exports = router;

@@ -21,6 +21,6 @@ const storeSchema = new Schema({
     }
 });
 
-const Messi = mongoose.model('Messi', storeSchema);
+const JugadorB = mongoose.model('JugadorB', storeSchema);
 
-module.exports = {Messi}
+module.exports = {JugadorB}

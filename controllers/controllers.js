@@ -1,18 +1,17 @@
-const {Tevez} = require('../models/model')
-const {Messi} = require('../models/jugador')
+const {JugadorB} = require('../models/jugador')
 
 const vistaUno = (req, res)=>{
     res.render('index', { title: 'Express' });
 }
 
 const vistaJugador = async (req, res) =>{
-    const jugador = await Messi.find()
-    res.json({jugador})
+    const Tevez = await JugadorB.find()
+    res.json({Tevez})
 }
 
 const otroJugador = async (req, res)=>{
     try {
-        const guardar = new Tevez(req.body)
+        const guardar = new JugadorB(req.body)
         await guardar.save()
         res.status(201).json(save)
     } catch (err) {
@@ -22,7 +21,7 @@ const otroJugador = async (req, res)=>{
 
 const crearJugador = async (req, res)=>{
     try {
-        const save = new Messi(req.body)
+        const save = new JugadorB(req.body)
         await save.save()
         res.status(201).json(save)
     } catch (err) {

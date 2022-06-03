@@ -21,6 +21,6 @@ const storeSchema = new Schema({
     }
 });
 
-const JugadorB = mongoose.model('JugadorB', storeSchema);
+const Jugador = mongoose.model('Jugador', storeSchema);
 
-module.exports = {JugadorB}
+module.exports = {Jugador}

@@ -15,4 +15,4 @@ const crearJugador = async (req, res)=>{
     }
 }
 
-module.exports = {vistaUno, crearJugador, vistaJugador, otroJugador}
+module.exports = {crearJugador, vistaJugador, otroJugador}

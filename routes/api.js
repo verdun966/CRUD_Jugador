@@ -5,6 +5,5 @@ const {vistaJugador, crearJugador, otroJugador} = require('../controllers/contro
 /* GET users listing. */
 router.get('/ver', vistaJugador);
 router.post('/crear', crearJugador);
-router.post('/crear', otroJugador);
  
 module.exports = router;

@@ -1,7 +1,7 @@
 const {Jugador} = require('../models/jugador')
 
 const vistaJugador = async (req, res) =>{
-    const jugadores = await Jugador.findById()
+    const jugadores = await Jugador.find()
     res.json({jugadores})
 }
 
